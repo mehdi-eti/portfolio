@@ -2,12 +2,20 @@
 
 const navLinks = [
 	{
-		name: "مهارت‌ها",
-		link: "#skills",
+		name: "About Me",
+		link: "#about",
 	},
 	{
-		name: "کار",
-		link: "#work",
+		name: "Projects",
+		link: "#projects",
+	},
+	{
+		name: "Experience",
+		link: "#experience",
+	},
+	{
+		name: "Skills",
+		link: "#skills",
 	},
 ];
 
@@ -23,7 +31,7 @@ const words = [
 ];
 
 const counterItems = [
-	{ value: 6, suffix: "+", label: "سال‌ها تجربه" },
+	{ value: 15, suffix: "+", label: "Years of Experience" },
 	{ value: 200, suffix: "+", label: "Satisfied Clients" },
 	{ value: 108, suffix: "+", label: "Completed Projects" },
 	{ value: 90, suffix: "%", label: "Client Retention Rate" },
@@ -68,18 +76,18 @@ const logoIconsList = [
 const abilities = [
 	{
 		imgPath: "/images/seo.png",
-		title: "تمرکز بر کیفیت",
-		desc: "ارائه نتایج با کیفیت بالا در عین توجه به تک تک جزئیات.",
+		title: "Quality Focus",
+		desc: "Delivering high-quality results while maintaining attention to every detail.",
 	},
 	{
 		imgPath: "/images/chat.png",
-		title: "ارتباط قابل اعتماد",
-		desc: "برای اطمینان از شفافیت و وضوح، شما را در هر مرحله به‌روز نگه می‌داریم.",
+		title: "Reliable Communication",
+		desc: "Keeping you updated at every step to ensure transparency and clarity.",
 	},
 	{
 		imgPath: "/images/time.png",
-		title: "تحویل به موقع",
-		desc: "اطمینان از اینکه پروژه‌ها طبق برنامه، با کیفیت و توجه به جزئیات به پایان می‌رسند.",
+		title: "On-Time Delivery",
+		desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
 	},
 ];
 
@@ -236,17 +244,18 @@ const socialImgs = [
 	{
 		name: "insta",
 		imgPath: "/images/insta.png",
-		url: "#",
+	},
+	{
+		name: "fb",
+		imgPath: "/images/fb.png",
+	},
+	{
+		name: "x",
+		imgPath: "/images/x.png",
 	},
 	{
 		name: "linkedin",
 		imgPath: "/images/linkedin.png",
-		url: "#",
-	},
-	{
-		name: "github",
-		imgPath: "/images/github.png",
-		url: "https://github.com/mehdi-eti",
 	},
 ];
 

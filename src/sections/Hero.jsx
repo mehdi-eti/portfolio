@@ -3,8 +3,8 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
+import { words } from "../constants";
 import Button from "../components/Button";
-import { ContainerTextFlip } from "../components/ui/container-text-flip";
 import HeroExperience from "../components/models/hero_models/HeroExperience";
 
 const Hero = () => {
@@ -15,23 +15,32 @@ const Hero = () => {
 	return (
 		<section id='hero' className='relative overflow-hidden'>
 			<div className='hero-layout'>
-				<header dir='rtl' className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
+				{/* LEFT: Hero Content */}
+				<header className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
 					<div className='flex flex-col gap-7'>
 						<div className='hero-text'>
-							<div className='flex w-full'>
-								<h2>تبدیل</h2>
-								<ContainerTextFlip words={["ایده های شما", "طرح‌های شما"]} />
-							</div>
-							<h2>به پروژه‌های واقعی</h2>
+							<h1>
+								Shaping
+								<span className='slide'>
+									<span className='wrapper'>
+										{words.map((word, index) => (
+											<span key={index} className='flex items-center md:gap-3 gap-1 pb-2'>
+												<img
+													src={word.imgPath}
+													alt='person'
+													className='xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50'
+												/>
+												<span>{word.text}</span>
+											</span>
+										))}
+									</span>
+								</span>
+							</h1>
+							<h1>into Real Projects</h1>
+							<h1>that Deliver Results</h1>
 						</div>
 
-						<span className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
-							سلام، من مهدی هستم، یک توسعه‌دهنده ساکن تهران علاقه مند به کدنویسی.
-						</span>
-
-						<a className='md:w-80 md:h-16 w-60 h-12' href='./resume.pdf' target='_blank' rel='noopener noreferrer'>
-							<Button text='رزومه من' id='counter' view={true} />
-						</a>
+						<Button text='See My Resume' className='md:w-80 md:h-16 w-60 h-12' id='counter' />
 					</div>
 				</header>
 
@@ -41,8 +50,6 @@ const Hero = () => {
 					</div>
 				</figure>
 			</div>
-
-			{/* <AnimatedCounter /> */}
 		</section>
 	);
 };

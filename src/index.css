@@ -3,19 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
 
-@font-face {
-	font-family: behdad;
-	font-style: normal;
-	font-weight: bold;
-	src: url("./assets/font/Behdad-Regular.otf") format("embedded-opentype"), /* IE6-8 */ url("./assets/font/Behdad-Regular.woff") format("woff"),
-		/* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("./assets/font/Behdad-Regular.woff2") format("woff2"),
-		/* FF39+,Chrome36+, Opera24+*/ url("./assets/font/Behdad-Regular.ttf") format("truetype");
-}
-
-* {
-	font-family: behdad, "Poppins", sans-serif !important;
-}
-
 :root {
 	--gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
 }
@@ -27,7 +14,7 @@ body {
 	background-color: black;
 	color: white;
 	scroll-behavior: smooth;
-	font-family: behdad, "Mona Sans", sans-serif;
+	font-family: "Mona Sans", sans-serif;
 }
 
 section {
@@ -35,7 +22,7 @@ section {
 }
 
 @theme {
-	--font-sans: behdad, "Mona Sans", sans-serif;
+	--font-sans: "Mona Sans", sans-serif;
 	--color-white-50: #d9ecff;
 	--color-black-50: #1c1c21;
 	--color-black-100: #0e0e10;
@@ -114,7 +101,7 @@ section {
 	}
 
 	.hero-3d-layout {
-		@apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-left-20 left-0;
+		@apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
 	}
 
 	.navbar {

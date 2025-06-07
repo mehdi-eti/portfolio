@@ -39,7 +39,7 @@ const TechStack = () => {
 	return (
 		<div id='skills' className='flex-center section-padding'>
 			<div className='w-full h-full md:px-10 px-5'>
-				<TitleHeader title='مهارت‌های کلیدی من' sub='🤝 آنچه من ارائه می‌دهم' />
+				<TitleHeader title='How I Can Contribute & My Key Skills' sub='🤝 What I Bring to the Table' />
 				<div className='tech-grid'>
 					{techStackIcons.map((techStackIcon) => (
 						<div key={techStackIcon.name} className='card-border tech-card overflow-hidden group xl:rounded-full rounded-lg'>
