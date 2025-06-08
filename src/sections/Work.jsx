@@ -25,7 +25,7 @@ const Work = () => {
 		<div id='experience' className='flex-center section-padding'>
 			<div className='h-full md:px-10 px-10'>
 				<TitleHeader title='My Experience ' sub='🧑‍💻 Experience' />
-				<div className='max-w-2xl mx-auto py-10 px-4'>
+				<div className='max-w-4xl mx-auto py-10 px-4'>
 					<div className='space-y-6'>
 						{experiences.map((exp, index) => (
 							<motion.div
@@ -33,7 +33,7 @@ const Work = () => {
 								initial={{ opacity: 0, translateY: 20 }}
 								animate={{ opacity: 1, translateY: 0 }}
 								transition={{ delay: index * 0.2 }}>
-								<Card className='flex gap-4 p-4 items-start'>
+								<Card className='flex gap-4 p-4 items-start border-4 border-gray-300'>
 									<img src={exp.logo} alt={exp.company} className='w-50 object-contain rounded' />
 									<CardContent className='flex-1 space-y-2'>
 										<div className='flex justify-between items-center'>
