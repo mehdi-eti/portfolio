@@ -24,11 +24,8 @@ const About = () => {
 							<a href='http://github.com/mehdi-eti' target='_blank' rel='noreferrer'>
 								<IconBrandGithub className='hover:text-amber-300 transition' />
 							</a>
-							<a href='https://linkedin.com/' target='_blank' rel='noreferrer'>
+							<a href='https://www.linkedin.com/in/mehdi-etezadi-68893120b/' target='_blank' rel='noreferrer'>
 								<IconBrandLinkedin className='hover:text-amber-300 transition' />
-							</a>
-							<a href='https://twitter.com/' target='_blank' rel='noreferrer'>
-								<IconBrandTwitter className='hover:text-amber-300 transition' />
 							</a>
 						</div>
 					</div>

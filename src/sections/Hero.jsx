@@ -40,7 +40,9 @@ const Hero = () => {
 							<h1>that Deliver Results</h1>
 						</div>
 
-						<Button text='See My Resume' className='md:w-80 md:h-16 w-60 h-12' id='counter' />
+						<a href='./resume.pdf' target='_blank' rel='noopener noreferrer' className='md:w-80 md:h-16 w-60 h-12'>
+							<Button text='See My Resume' id='counter' view />
+						</a>
 					</div>
 				</header>
 

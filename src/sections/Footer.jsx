@@ -10,7 +10,7 @@ const Footer = () => {
 		{
 			title: "Linkedin",
 			icon: <IconBrandLinkedin className='h-full w-full text-neutral-500 dark:text-neutral-300' />,
-			href: "#",
+			href: "https://www.linkedin.com/in/mehdi-etezadi-68893120b/",
 		},
 		{
 			title: "GitHub",

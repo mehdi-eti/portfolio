@@ -8,6 +8,7 @@ import Navbar from "./components/NavBar";
 import TechStack from "./sections/TechStack";
 import FeatureCards from "./sections/FeatureCards";
 import Projects from "./sections/Projects";
+import Works from "./sections/Work";
 
 const App = () => (
 	<>
@@ -16,6 +17,7 @@ const App = () => (
 		<About />
 		<Projects />
 		<FeatureCards />
+		<Works />
 		<TechStack />
 		<Contact />
 		<Footer />
