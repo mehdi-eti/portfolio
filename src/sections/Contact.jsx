@@ -31,37 +31,67 @@ const Contact = () => {
 				formRef.current,
 				import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
 			);
-
-			// Reset form and stop loading
 			setForm({ name: "", email: "", message: "" });
 		} catch (error) {
-			console.error("EmailJS Error:", error); // Optional: show toast
+			console.error("EmailJS Error:", error);
 		} finally {
-			setLoading(false); // Always stop loading, even on error
+			setLoading(false);
 		}
 	};
 
 	return (
-		<section id='contact' className='flex-center section-padding'>
-			<div className='w-full h-full md:px-10 px-5'>
+		<section id='contact' className='flex-center section-padding px-4 sm:px-6 md:px-10'>
+			<div className='w-full max-w-6xl mx-auto'>
 				<TitleHeader title='Get in Touch – Let’s Connect' sub='💬 Have questions or ideas? Let’s talk! 🚀' />
-				<div className='grid-12-cols mt-16'>
+
+				<div className='mt-12 grid grid-cols-1 xl:grid-cols-12 gap-8'>
+					{/* Form Section */}
 					<div className='xl:col-span-5'>
-						<div className='flex-center card-border rounded-xl p-10'>
-							<form ref={formRef} onSubmit={handleSubmit} className='w-full flex flex-col gap-7'>
+						<div className='card-border rounded-xl p-6 sm:p-10 bg-white/5'>
+							<form ref={formRef} onSubmit={handleSubmit} className='w-full flex flex-col gap-6'>
 								<div>
-									<label htmlFor='name'>Your Name</label>
-									<input required id='name' type='text' name='name' value={form.name} onChange={handleChange} />
+									<label htmlFor='name' className='block text-sm mb-1'>
+										Your Name
+									</label>
+									<input
+										required
+										id='name'
+										type='text'
+										name='name'
+										value={form.name}
+										onChange={handleChange}
+										className='w-full px-3 py-2 rounded-md bg-white/10 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-sm'
+									/>
 								</div>
 
 								<div>
-									<label htmlFor='email'>Your Email</label>
-									<input required id='email' type='email' name='email' value={form.email} onChange={handleChange} />
+									<label htmlFor='email' className='block text-sm mb-1'>
+										Your Email
+									</label>
+									<input
+										required
+										id='email'
+										type='email'
+										name='email'
+										value={form.email}
+										onChange={handleChange}
+										className='w-full px-3 py-2 rounded-md bg-white/10 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-sm'
+									/>
 								</div>
 
 								<div>
-									<label htmlFor='message'>Your Message</label>
-									<textarea rows='5' required id='message' name='message' value={form.message} onChange={handleChange} />
+									<label htmlFor='message' className='block text-sm mb-1'>
+										Your Message
+									</label>
+									<textarea
+										rows={5}
+										required
+										id='message'
+										name='message'
+										value={form.message}
+										onChange={handleChange}
+										className='w-full px-3 py-2 rounded-md bg-white/10 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-sm'
+									/>
 								</div>
 
 								<button type='submit'>
@@ -76,8 +106,10 @@ const Contact = () => {
 							</form>
 						</div>
 					</div>
-					<div className='xl:col-span-7 min-h-96'>
-						<div className='bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden'>
+
+					{/* Visual / Canvas */}
+					<div className='xl:col-span-7 min-h-80 sm:min-h-96'>
+						<div className='bg-[#cd7c2e] w-full h-full rounded-2xl overflow-hidden hover:cursor-grab'>
 							<ContactExperience />
 						</div>
 					</div>
