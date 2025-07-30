@@ -1,7 +1,7 @@
 <div align="center">
   <br />
-    <a href="https://your-portfolio-link.com" target="_blank">
-      <img src="public/images/readme.png" alt="Portfolio Banner">
+    <a href="https://fascinating-haupia-f4b311.netlify.app/" target="_blank">
+      <img src="https://github.com/mehdi-eti/portfolio/blob/main/Screenshot%202025-07-30%20114200.png" alt="Portfolio Banner">
     </a>
   <br />
 
